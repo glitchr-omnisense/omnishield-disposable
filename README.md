@@ -1,6 +1,6 @@
 # omnishield/disposable
 
-**Disposable e-mail domains** for [glitchr/omnishield](https://github.com/glitchr-studio/omnishield):
+**Disposable e-mail domains** for [omniscient/omnishield](https://github.com/glitchr-studio/omnishield):
 is this e-mail's domain a throw-away one. The free list of the
 [disposable-email-domains](https://github.com/disposable-email-domains/disposable-email-domains)
 project (CC0, 9,205 domains on 2026-10-05) ships in the package; the site adds its own allow and
