@@ -32,7 +32,7 @@ vendor/bin/omnishield-disposable refresh var/disposable_domains.txt
 vendor/bin/omnishield-disposable check someone@mailinator.com --list var/disposable_domains.txt
 ```
 
-[Documentation](docs/index.md): the matching, the options, the refresh, the list's licence, what
+[Documentation](docs/index.md): what it calls, the credentials, the capabilities, an example run offline, the errors, the matching, the options, the refresh, the list's licence, what
 was verified.
 
 License: MIT since 2026-10-09; earlier versions remain published under LGPL-3.0-or-later. The list itself (`data/domains.txt`): CC0 1.0, by its authors.
