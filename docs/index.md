@@ -73,6 +73,7 @@ at the file; a long-running worker reads the new list when it builds the gateway
 
 | | |
 |---|---|
+| The family's conformance suite (`Omnishield\Testing\GatewayContractTests`) | **green on 2026-10-25**, offline: `Tests/DisposableContractTest.php`: no request made |
 | The shipped list on real domains | **done on 2026-10-07**: mailinator.com, eu.yopmail.com, guerrillamail.com, 10minutemail.com disposable; gmail.com, outlook.fr, example.org, laposte.net, proton.me not |
 | The refresh | **done on 2026-10-07**: `vendor/bin/omnishield-disposable refresh` downloaded 9,205 domains with PHP's own streams, `check` read them |
 | The allow and deny lists, a list of the application's | by the tests |
