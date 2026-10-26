@@ -11,7 +11,7 @@ leaves the site. A command refreshes the list from the project's repository.
 composer require omnishield/disposable
 ```
 
-PHP 8.2 or later and `omniscient/omnishield`: nothing else. No HTTP client while a request runs; the
+PHP 8.2 or later and `omnisense/omnishield`: nothing else. No HTTP client while a request runs; the
 refresh uses the application's client when given one, PHP's own streams otherwise.
 
 ## Credentials
