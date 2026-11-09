@@ -37,4 +37,4 @@ was verified.
 
 License: MIT since 2026-10-09; earlier versions remain published under LGPL-3.0-or-later. The list itself (`data/domains.txt`): CC0 1.0, by its authors.
 
-Formerly `omniguard/disposable`, renamed on 2026-10-10 with its family (`glitchr/omnishield`).
+Formerly `omniguard/disposable`, renamed on 2026-10-10 with its family (`glitchr/omniguard`, now `omnisense/omnishield`).
