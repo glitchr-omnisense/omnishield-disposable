@@ -35,6 +35,10 @@ vendor/bin/omnishield-disposable check someone@mailinator.com --list var/disposa
 [Documentation](docs/index.md): what it calls, the credentials, the capabilities, an example run offline, the errors, the matching, the options, the refresh, the list's licence, what
 was verified.
 
+## Usage policy
+
+[`policy.json`](policy.json) (omnisense/contracts' schema, read on 2026-11-10): a lookup calls nobody, so no rate limit; the list is CC0 1.0. See the core's [usage policies](https://github.com/glitchr-omnisense/omnishield/blob/1.x/docs/policies.md).
+
 License: MIT since 2026-10-09; earlier versions remain published under LGPL-3.0-or-later. The list itself (`data/domains.txt`): CC0 1.0, by its authors.
 
 Formerly `omniguard/disposable`, renamed on 2026-10-10 with its family (`glitchr/omniguard`, now `omnisense/omnishield`).

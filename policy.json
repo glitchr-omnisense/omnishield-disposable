@@ -1,0 +1,37 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "disposable",
+    "rateLimits": [],
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": false,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": "CC0-1.0"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://github.com/disposable-email-domains/disposable-email-domains",
+        "policy": null,
+        "contact": "https://github.com/disposable-email-domains/disposable-email-domains/issues",
+        "notes": "The list (data/domains.txt) is disposable-email-domains' blocklist under CC0 1.0: \"You can copy, modify, distribute and use the work, even for commercial purposes, all without asking permission\"; no attribution asked. A lookup reads the shipped list and calls nobody: no rate limit. DisposableList::refresh() downloads the list from raw.githubusercontent.com, whose limits the project does not state.",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer"
+    }
+}

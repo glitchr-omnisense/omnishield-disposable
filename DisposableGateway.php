@@ -2,6 +2,8 @@
 
 namespace Omnishield\Disposable;
 
+use Omnisense\Contracts\Policy\DeclaresUsagePolicyInterface;
+use Omnisense\Contracts\Policy\UsagePolicy;
 use Omnishield\Model\Capabilities;
 use Omnishield\Model\Identity;
 use Omnishield\Model\Reputation;
@@ -16,8 +18,13 @@ use Omnishield\ReputationInterface;
  * reported now and then: frequency 0, confidence 100, reasons [email,
  * disposable], and the part of the domain that matched in data.
  */
-final class DisposableGateway implements ReputationInterface
+final class DisposableGateway implements ReputationInterface, DeclaresUsagePolicyInterface
 {
+    /** The usage policy its package declares (omnisense/contracts' schema). */
+    public const POLICY = __DIR__.'/policy.json';
+
+    private static ?UsagePolicy $policy = null;
+
     /** @var array<string, true> */
     private readonly array $allow;
 
@@ -46,7 +53,13 @@ final class DisposableGateway implements ReputationInterface
 
     public function capabilities(): Capabilities
     {
-        return new Capabilities(reputation: true, thirdParty: false, cookies: false, reads: [Reputation::EMAIL]);
+        return new Capabilities(reputation: true, thirdParty: false, cookies: false, reads: [Reputation::EMAIL], policy: $this->usagePolicy());
+    }
+
+    /** Its usage policy, as its package declares it: policy.json beside this class. */
+    public function usagePolicy(): UsagePolicy
+    {
+        return self::$policy ??= UsagePolicy::fromFile(self::POLICY);
     }
 
     public function lookup(Identity $identity): Reputation
