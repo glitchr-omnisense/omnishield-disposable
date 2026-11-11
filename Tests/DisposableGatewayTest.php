@@ -19,6 +19,7 @@ use Symfony\Component\HttpClient\Response\MockResponse;
  */
 final class DisposableGatewayTest extends TestCase
 {
+    /** @param array<string, mixed> $options */
     private function gateway(array $options = []): DisposableGateway
     {
         $gateway = (new DisposableGatewayFactory())->create($options);
